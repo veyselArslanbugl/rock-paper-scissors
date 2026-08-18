@@ -1,3 +1,5 @@
+//1
+
 function  getComputerChoice(){
     let randomNumber = Math.random(); 
     if(randomNumber < 0.33){
@@ -9,9 +11,11 @@ function  getComputerChoice(){
     }
 }
 
-console.log("Computer's choice: " + getComputerChoice());
-console.log("Computer's choice: " + getComputerChoice());
-console.log("Computer's choice: " + getComputerChoice());
-console.log("Computer's choice: " + getComputerChoice());
-console.log("Computer's choice: " + getComputerChoice());
-console.log("Computer's choice: " + getComputerChoice());
+
+// 2
+
+function getHumanChoice(){
+    let userInput = prompt("Please enter your choice: rock , paper or scissors");
+    return userInput.toLowerCase();
+}
+
