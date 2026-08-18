@@ -1,6 +1,5 @@
 
 
-//1
 
 function  getComputerChoice(){
     let randomNumber = Math.random(); 
@@ -14,24 +13,25 @@ function  getComputerChoice(){
 }
 
 
-// 2
-
 function getHumanChoice(){
-    let userInput = prompt("Please enter your choice: rock , paper or scissors");
-    return userInput.toLowerCase();
+    let userInput = prompt("Please enter your choice: rock , paper or scissors").toLowerCase();
+    if( (userInput !== "rock") &&
+        (userInput !== "paper") &&
+        (userInput !== "scissors")
+    ){
+        console.log("Invalid choice! I picked one for you.");
+        return getComputerChoice();
+    }
+    return userInput;
 }
 
 
 
-//4
-
 function playGame(){
 
-    //3.1
     let humanScore = 0;
     let computerScore = 0;
 
-    //3.2
     function playRound(humanChoice, computerChoice) {
         if (humanChoice === computerChoice) {
           console.log("It's a tie! Both chose " + humanChoice);
