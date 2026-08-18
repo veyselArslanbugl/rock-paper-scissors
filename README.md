@@ -1,7 +1,7 @@
 # rock-paper-scissors
 
 A 5-round console game built with JavaScript for The Odin Project. 
-👉 **[Live Demo](#)**
+👉 **[Live Demo](https://veyselarslanbugl.github.io/rock-paper-scissors/)**
 
 ## How to Play
 1. Open the link and press `F12` (or right-click > **Inspect**) to open the **Console**.
