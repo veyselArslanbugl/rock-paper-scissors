@@ -52,31 +52,14 @@ function playGame(){
     let humanSelection;
     let computerSelection;
 
-    console.log("Round 1");
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection ,computerSelection);
-
-    console.log("Round 2");
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection ,computerSelection);
-
-    console.log("Round 3");
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection ,computerSelection);
 
 
-    console.log("Round 4");
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection ,computerSelection);
-
-    console.log("Round 5");
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection ,computerSelection);
+    for( let i = 0 ; i < 5 ; i++){
+        console.log(`Round ${i + 1}`);
+        humanSelection = getHumanChoice();
+        computerSelection = getComputerChoice();
+        playRound( humanSelection , computerSelection);
+    }
 
     console.log("=== GAME OVER ===");
     if (humanScore > computerScore) {
