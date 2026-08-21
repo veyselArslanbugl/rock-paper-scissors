@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+}
+
+.computer-section,
+.human-section,
+.game-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.computer-info,
+.human-info,
+.human-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.human-info span,
+.computer-info span {
+    font-size: 64px;
+}
+
+
+.human-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    font-size: 24px; /* Emojileri büyütür */
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.computer-choice,
+.human-score span,
+.computer-score span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 28px;
+}
+
+
+.result-message p {
+    font-size: 16px;
+    background-color: #e2e8f0;
+    padding: 6px 16px;
+    width: 300px;
+    text-align: center;
+}
+
+.computer-info {
+    justify-content: flex-start;
+}
+
+.game-section {
+    padding: 40px;
+}
